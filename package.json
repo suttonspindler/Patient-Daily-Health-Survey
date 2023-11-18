@@ -1,0 +1,26 @@
+{
+  "name": "patient-daily-health-survey",
+  "version": "1.0.0",
+  "description": "Patient Daily Health Survey",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/suttonspindler/Patient-Daily-Health-Survey.git"
+  },
+  "author": "Sutton Spindler",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/suttonspindler/Patient-Daily-Health-Survey/issues"
+  },
+  "homepage": "https://github.com/suttonspindler/Patient-Daily-Health-Survey#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "helmet": "^7.1.0",
+    "nodemon": "^3.0.1"
+  }
+}
