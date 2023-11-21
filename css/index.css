@@ -1,0 +1,27 @@
+.survey-container {
+    justify-items: center;
+    display: grid;
+    grid-template-columns: 350px 350px 350px;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.survey-block {
+    padding: 20px 20px 20px 20px;
+    text-align: center;
+    background-color: #ee908b;
+    width: 300px;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.create-block {
+    padding: 60px 20px 60px 20px;
+    text-align: center;
+    background-color: #ee908b;
+    width: 300px;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

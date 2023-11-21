@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <title>Create the survey</title>
+</head>
+
+<body>
+    <div class="page-content">
+        <form action="" method="POST" id="create">
+            <div id="inputContainer">
+                <input type="hidden" class="input" name="question" value="">
+                <input type="text" class="input" name="question" value="">
+                <br><br>
+            </div>
+            <button type="button" class="add_field">Add question</button>
+            <br class="input-break">
+            <input type="hidden" id="name" name="name" value="<%= name %>" />
+            <button class="btn" type="submit">Submit survey</button>
+        </form>
+    </div>
+    <script src="scripts/create.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,9 @@
+services:
+  app:
+    build: .
+    container_name: health-survey-container
+    command: npm start
+    ports:
+      - 3000:3000
+    volumes:
+      - .:/app

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport">
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/index.css" rel="stylesheet" type="text/css" />
+    <title>Patient Daily Health Survey</title>
+</head>
+
+<body>
+    <h1 class="header">Welcome to Daily Health Survey</h1>
+    <p class="description">Take your assigned surveys!</p>
+    <hr class="hr">
+    <div class="survey-container page-content">
+        <% surveys.forEach((survey)=> { %>
+            <div class="survey-block">
+                <label for="edit/delete">
+                    <h3>
+                        <%= survey.name %>
+                    </h3>
+                </label>
+                <form action="/take-survey" method="GET" class="inline-form">
+                    <input type="hidden" id="edit" name="name" value="<%= survey.name %>" />
+                    <button class="btn" type="submit">
+                        Take survey
+                    </button>
+                </form>
+            </div>
+            <% }); %>
+    </div>
+    <div class="page-buttons">
+        <a href="/">
+            <input type="button" class="btn" value="Logout">
+        </a>
+    </div>
+</body>
+
+</html>

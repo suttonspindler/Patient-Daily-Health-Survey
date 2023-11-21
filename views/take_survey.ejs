@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <title>Complete the surveys</title>
+</head>
+
+<body>
+    <div class="page-content">
+        <form action="" method="POST" id="edit">
+            <div id="inputContainer">
+                <% question.forEach((question)=> { %>
+                    <div>
+                        <%= question %>
+                            <input type="hidden" id="question" name="question" value="<%= question %>" />
+                            <br>
+                            <input type="text" class="input" name="response" value="">
+                            <br><br>
+                    </div>
+                    <% }); %>
+            </div>
+            <br class="input-break">
+            <input type="hidden" id="name" name="name" value="<%= name %>" />
+            <button class="btn" type="submit">Submit survey</button>
+        </form>
+    </div>
+</body>
+
+</html>
