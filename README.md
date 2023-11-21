@@ -13,8 +13,11 @@
 - Run the commands
 
   ```npm i```
+  
   ```docker build -t survey-image .```
+  
   ```docker compose build```
+  
   ```docker compuse up -d```
 
 - Go to the link http://localhost:3000/
