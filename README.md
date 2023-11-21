@@ -10,7 +10,7 @@
 - Clone the repository to your local file system
 - Add the .env file to the root folder (provided upon request)
 - Open a terminal at the root folder
-- Run the commands
+- Run the commands:
 
   ```npm i```
   
